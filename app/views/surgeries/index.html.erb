@@ -2,7 +2,7 @@
 
 <% @surgeries.each do |surgery| %>
 <section id="surgery-<%= surgery.id%>">
-  <p>Surgery being performed: <%= surgery.title %></p>
+  <p>Surgery being performed: <%= link_to surgery.title, "/surgeries/#{surgery.id}" %></p>
   <% surgery.doctors.each do |doctor| %>
     <li>Doctors Performing Surgery: <%= doctor.name %></li>
     <% end %>
