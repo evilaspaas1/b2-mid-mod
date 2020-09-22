@@ -2,7 +2,7 @@
 
 <% @surgeries.each do |surgery| %>
 <section id="surgery-<%= surgery.id%>">
-  <%= surgery.title %>
+  <p>Surgery being performed: <%= surgery.title %></p>
   <% surgery.doctors.each do |doctor| %>
     <li>Doctors Performing Surgery: <%= doctor.name %></li>
     <% end %>
